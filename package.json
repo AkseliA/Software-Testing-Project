@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-coverage": "c8 npm test"
   },
   "author": "",
   "license": "MIT",

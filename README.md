@@ -13,9 +13,10 @@ Repository cloned from [COMP.SE.200-2022-2023-1](https://github.com/otula/COMP.S
 - drop.js
 - ceil.js
 
-### Running the tests
+### Running the tests and test-coverage tool
 1. `npm i` to install dependencies
 2. `npm test` to run tests
+3. `npm run test-coverage` to generate c8 test-coverage report
 
 ## Purpose of this repository
 
