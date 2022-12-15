@@ -19,5 +19,8 @@
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
     }
+  },
+  "dependencies": {
+    "c8": "^7.12.0"
   }
 }
