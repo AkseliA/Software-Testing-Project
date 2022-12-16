@@ -11,6 +11,14 @@ describe("words.js tests", () => {
             .toStrictEqual(["fred", "barney", "&", "pebbles"])
     })
 
+    it("should return empty array if pattern is null", () => {
+        expect(words("testing pattern", null))
+            .toStrictEqual([])
+    })
+    it("should return empty array if pattern and string is null", () => {
+        expect(words(null, null))
+            .toStrictEqual([])
+    })
     it("should return empty array if parameter string is empty", () => {
         expect(words("")).toStrictEqual([])
     })
