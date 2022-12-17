@@ -15,29 +15,29 @@ describe("eq.js tests", () => {
         expect(eq(NaN, NaN)).toBe(true)
     })
 
-    it("should return false when comparing different types", () => {
-        expect(eq("a", Object("a"))).toBe(false)
+    it("should return true if comparing same values", () => {
+        expect(eq([1, 2, 3], [1, 2, 3])).toBe(true)
     })
-    it("should return false when comparing different types", () => {
-        expect(eq(obj, other)).toBe(false)
+    it("should return true if comparing same values", () => {
+        expect(eq(num1, num1)).toBe(true)
     })
     it("should return false when comparing different types", () => {
         expect(eq(0, null)).toBe(false)
     })
-    it("should return false when comparing different objects", () => {
-        expect(eq(num2, num1)).toBe(false)
-    })
-    
-    it("should return true if comparing same values", () => {
-        expect(eq(num1, num1)).toBe(true)
-    })
-    it("should return true if comparing same values", () => {
+
+    it("should return true if comparing same values but types are different", () => {
         expect(eq(num1, 2)).toBe(true)
     })
-    it("should return true if comparing same values", () => {
+    it("should return true if comparing same values but types are different", () => {
         expect(eq(1, "1")).toBe(true)
     })
-    it("should return true if comparing same values", () => {
-        expect(eq([1, 2, 3], [1, 2, 3])).toBe(true)
+    it("should return true when comparing same value but types are different", () => {
+        expect(eq(num2, num1)).toBe(false)
+    })
+    it("should return true when comparing same value but types are different", () => {
+        expect(eq("a", Object("a"))).toBe(true)
+    })
+    it("should return true when comparing same value but types are different", () => {
+        expect(eq(obj, other)).toBe(true)
     })
 })
