@@ -18,6 +18,9 @@ describe("toString.js tests", () => {
     it("should return empty string when parameter is null", () => {
         expect(toString(null)).toBe('')
     })
+    it("should return null when parameter is empty string", () => {
+        expect(toString('')).toBe(null)
+    })
     it("should return empty string when parameter is null", () => {
         expect(toString(Symbol.iterator)).toBe('Symbol(Symbol.iterator)')
     })
