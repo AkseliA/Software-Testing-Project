@@ -29,7 +29,7 @@ describe("drop.js tests", () => {
         expect(drop([null, null])).toStrictEqual([])
     })
     it("should return an empty array", () => {
-        expect(drop([null, null], null)).toStrictEqual([nll])
+        expect(drop([null, null], null)).toStrictEqual([])
     })
     it("should return an array without the first value", () => {
         expect(drop([null, 5])).toStrictEqual([5])

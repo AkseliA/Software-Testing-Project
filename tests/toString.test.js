@@ -15,10 +15,11 @@ describe("toString.js tests", () => {
         expect(toString([1,2,3])).toBe('1,2,3')
     })
 
+
     it("should return empty string when parameter is null", () => {
         expect(toString(null)).toBe('')
     })
-    it("should return empty string when parameter is null", () => {
+    it("should return the symbol as string", () => {
         expect(toString(Symbol.iterator)).toBe('Symbol(Symbol.iterator)')
     })
 
